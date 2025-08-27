@@ -3,7 +3,7 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>良乡赶考 · 互动叙事主程序</title>
+  <title>《霍格沃茨：掠夺纪年 · 互动叙事主程序</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,11 @@
 <body>
 <header>
   <div class="bar">
-    <div class="title">良乡赶考</div>
+  <div class="title">霍格沃茨：掠夺纪年</div>
+<!-- <div class="title-bar">
+  <img src="images/logo.png" alt="logo" class="title-logo">
+  <span class="title-text">霍格沃茨：掠夺纪年</span>
+</div> -->
     <!-- 新增登录/注册 -->
     <div class="auth">
       <a href="login.html?from=index" class="btn small">登录</a>
@@ -23,7 +27,7 @@
 <main>
   <!-- 开场说明 -->
   <section id="intro" class="card">
-    <h3 id="introTitle" style="text-align:center; font-size:32px;">⚡ 开场 ⚡</h3>
+    <h3 id="introTitle" style="text-align:center; color:rgb(174, 0, 255); font-size:32px;">⚡ 开场 ⚡</h3>
 
     <p style="text-align:center; font-size:18px; line-height:1.8;">
       <span id="introText"></span>
@@ -40,26 +44,10 @@
     <div class="row" style="display:flex; justify-content:center; gap:10px;">
       <!-- 修改：跳转到 reality.html -->
       <a href="reality.html" class="btn primary">我已清醒，开始出发</a>
-      <button id="howBtn" class="btn">查看规则</button>
+      <!-- <button id="howBtn" class="btn">查看规则</button> -->
     </div>
   </section>
 </main>
-
-<!-- 规则弹窗 -->
-<dialog id="ruleDlg">
-  <div class="modal" style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px;">
-    <h3 style="text-align:center;">游戏规则</h3>
-    <ol style="text-align:left;">
-      <li>总时间：<strong>60 分钟</strong>（顶部实时减少）。</li>
-      <li>不同的<strong>选择与事件</strong>会消耗时间，部分节点将进入<strong>小游戏</strong>。</li>
-      <li>小游戏成功/失败将带来<strong>不同代价</strong>。</li>
-      <li>时间耗尽即意味着<strong>失败</strong>，会触发不同结局。</li>
-    </ol>
-    <div class="row" style="margin-top:10px;">
-      <button id="ruleClose" class="btn primary">我已明白</button>
-    </div>
-  </div>
-</dialog>
 
 <footer>
   <a href="about.html?from=index" class="footer-link">关于我们 →</a>

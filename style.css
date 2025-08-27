@@ -100,3 +100,9 @@ footer {
   font-size: 14px;
   margin-left: 6px;
 }
+
+.title-logo {
+    width: 20px;             /* 限制宽度 */
+    height: 20px;            /* 限制高度 */
+    object-fit: contain;     /* 保持比例，不拉伸 */
+}
