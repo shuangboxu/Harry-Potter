@@ -1,0 +1,66 @@
+<!-- reality.html 现实部分主文件 -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>现实场景 · 出发去良乡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="bar">
+    <div class="title">良乡赶考</div>
+    <!-- 新增登录/注册 -->
+    <div class="auth">
+      <a href="login.html?from=reality" class="btn small">登录</a>
+      <a href="register.html?from=reality" class="btn small accent">注册</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 游戏主菜单（现实世界出发后） -->
+  <section id="routes" class="card">
+    <h3 style="text-align:center; font-size:24px; margin-bottom:20px;">🎮 游戏主菜单</h3>
+    <div class="grid">
+      
+      <div class="route" style="text-align:center;">
+        <h4>开始游戏 <span class="tag">新旅程</span></h4>
+        <div class="muted">进入主线剧情，开启良乡赶考之路</div>
+        <div class="row" style="margin-top:12px; justify-content:center;">
+          <a href="game.html" class="btn primary">进入</a>
+        </div>
+      </div>
+
+      <div class="route" style="text-align:center;">
+        <h4>存档 <span class="tag">进度</span></h4>
+        <div class="muted">查看与管理游戏存档</div>
+        <div class="row" style="margin-top:12px; justify-content:center;">
+          <a href="save.html" class="btn accent">进入</a>
+        </div>
+      </div>
+
+      <div class="route" style="text-align:center;">
+        <h4>成就 <span class="tag">目标</span></h4>
+        <div class="muted">查看你解锁的成就与奖励</div>
+        <div class="row" style="margin-top:12px; justify-content:center;">
+          <a href="achievements.html" class="btn warn">进入</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="about.html?from=reality" class="footer-link">关于我们 →</a>
+</footer>
+
+<script src="config.js"></script>
+<script src="utils.js"></script>
+<script src="engine.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
